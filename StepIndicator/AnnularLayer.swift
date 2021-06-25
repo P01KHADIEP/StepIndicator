@@ -70,6 +70,7 @@ class AnnularLayer: CAShapeLayer {
         if isFinished {
             self.path = nil
             self.drawFullCircleAnimated()
+            self.centerCircleLayer.removeFromSuperlayer()
         }
         else{
             fullCircleLayer.removeFromSuperlayer()
