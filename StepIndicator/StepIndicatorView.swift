@@ -214,7 +214,7 @@ public class StepIndicatorView: UIView {
             
             if (i < self.numberOfSteps - 1) {
                 let lineLayer = self.horizontalLineLayers[i]
-                lineLayer.frame = CGRect(x: x - 1, y: CGFloat(i) * stepWidth + diameter + self.lineMargin * 2, width: 3 , height: stepWidth - diameter - self.lineMargin * 2)
+                lineLayer.frame = CGRect(x: x - 1.5, y: CGFloat(i) * stepWidth + diameter + self.lineMargin * 2, width: 3 , height: stepWidth - diameter - self.lineMargin * 2)
                 lineLayer.isHorizontal = false
                 self.applyLineStyle(lineLayer: lineLayer)
                 lineLayer.updateStatus()

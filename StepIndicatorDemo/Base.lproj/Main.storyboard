@@ -36,9 +36,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yST-gL-Hd6" customClass="StepIndicatorView" customModule="StepIndicatorDemo" customModuleProvider="target">
-                                <rect key="frame" x="56" y="74" width="263" height="80"/>
+                                <rect key="frame" x="56" y="74" width="263" height="583"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="E3e-xS-ZzW"/>
                                     <constraint firstAttribute="width" constant="263" id="KBj-Ys-sXJ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -65,26 +64,16 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MyL-yX-cNQ">
-                                <rect key="frame" x="0.0" y="162" width="375" height="505"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PnJ-CX-m6O"/>
-                                </connections>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.92549019607843142" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MyL-yX-cNQ" secondAttribute="bottom" id="4hO-2L-ZF3"/>
-                            <constraint firstItem="MyL-yX-cNQ" firstAttribute="top" secondItem="yST-gL-Hd6" secondAttribute="bottom" constant="8" id="QBN-a7-98y"/>
-                            <constraint firstAttribute="trailing" secondItem="MyL-yX-cNQ" secondAttribute="trailing" id="QrL-9h-fK1"/>
-                            <constraint firstItem="MyL-yX-cNQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dE1-gl-5S0"/>
                             <constraint firstItem="yST-gL-Hd6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ge3-Gy-hdE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yST-gL-Hd6" secondAttribute="bottom" constant="10" id="s5r-tw-QeK"/>
                             <constraint firstItem="yST-gL-Hd6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="utg-A5-v2l"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Step Indicator Demo" id="2qk-Vj-Y8L"/>
                     <connections>
-                        <outlet property="scrollView" destination="MyL-yX-cNQ" id="hMm-vp-os5"/>
                         <outlet property="stepIndicatorView" destination="yST-gL-Hd6" id="vEk-q1-Nb3"/>
                     </connections>
                 </viewController>

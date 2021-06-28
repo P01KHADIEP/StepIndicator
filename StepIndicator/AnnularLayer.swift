@@ -115,7 +115,7 @@ class AnnularLayer: CAShapeLayer {
     private func drawCenterCircleAnimated() {
         let centerPath = UIBezierPath()
         let sideLength = fmin(self.frame.width, self.frame.height)
-        let circlesRadius = sideLength / 2.0 - sideLength * 0.15
+        let circlesRadius = sideLength / 2.0
         
         centerPath.addArc(withCenter: CGPoint(x:self.bounds.midX, y:self.bounds.midY), radius: circlesRadius, startAngle: 0.0, endAngle: 2 * CGFloat.pi, clockwise: true)
         
